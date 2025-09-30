@@ -1,5 +1,32 @@
+/* デフォルトスタイル（PC向け） */
 body {
-  font-family: Arial;
-  text-align: center;
-  background-color: #f0f0f0;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+ul#userList {
+  list-style: none;
+  padding: 0;
+}
+
+ul#userList li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+}
+
+/* スマートフォン向け（画面幅600px以下） */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  ul#userList li {
+    font-size: 14px;
+    padding: 6px;
+  }
 }
