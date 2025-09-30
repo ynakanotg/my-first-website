@@ -6,7 +6,7 @@ body {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 16px;
 }
 
@@ -49,19 +49,23 @@ ul#userList li {
   gap: 20px;
 }
 
-/* スマートフォン向け（画面幅600px以下） */
-@media (max-width: 600px) {
+/* スマホ・小型タブレット向け（画面幅768px以下） */
+@media (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
   h2 {
-    font-size: 50px;
+    font-size: 22px;
   }
 
   ul#userList li {
-    font-size: 50px;
+    font-size: 17px;
     padding: 14px;
   }
 
   .box {
-    font-size: 50px;
+    font-size: 18px;
     padding: 16px;
   }
 
@@ -74,5 +78,3 @@ ul#userList li {
     grid-template-columns: 1fr;
   }
 }
-
-
