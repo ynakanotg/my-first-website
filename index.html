@@ -12,7 +12,18 @@
 
   <!-- JavaScriptファイルの読み込み -->
   <script src="script.js"></script>
+
+  <p id="message">こんにちは！</p>
+  <button onclick="changeText()">文字を変える</button>
+
+  <script>
+  function changeText() {
+    document.getElementById("message").innerText = "JavaScriptで変更されました！";
+  }
+  </script>
+
 </body>
 </html>
+
 
 
