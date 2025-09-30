@@ -33,4 +33,6 @@ function addItem() {
     document.getElementById("itemList").appendChild(li);
     input.value = "";
   }
+}
+
 
