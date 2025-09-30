@@ -52,16 +52,16 @@ ul#userList li {
 /* スマートフォン向け（画面幅600px以下） */
 @media (max-width: 600px) {
   h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   ul#userList li {
-    font-size: 16px;
+    font-size: 30px;
     padding: 14px;
   }
 
   .box {
-    font-size: 18px;
+    font-size: 30px;
     padding: 16px;
   }
 
