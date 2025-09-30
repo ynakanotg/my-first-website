@@ -2,28 +2,57 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My First Page</title>
-  <!-- CSSファイルの読み込み -->
-  style.css
+  <title>JavaScript応用ページ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    button {
+      margin: 10px 0;
+      padding: 10px;
+    }
+    input {
+      padding: 5px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
-  <button onclick="sayHello()">Click Me</button>
+  <h1>JavaScript応用ページ</h1>
 
-  <!-- JavaScriptファイルの読み込み -->
-  <script src="script.js"></script>
+  <div class="section">
+    <h2>① 文字を変える</h2>
+    <p id="message">こんにちは！</p>
+    <button onclick="changeText()">文字を変える</button>
+  </div>
 
-  <p id="message">こんにちは！</p>
-  <button onclick="changeText()">文字を変える</button>
+  <div class="section">
+    <h2>② 名前を入力して挨拶する</h2>
+    <input type="text" id="nameInput" placeholder="名前を入力してください">
+    <button onclick="greet()">挨拶する</button>
+    <p id="greeting"></p>
+  </div>
 
-  <script>
-  function changeText() {
-    document.getElementById("message").innerText = "JavaScriptで変更されました！";
-  }
-  </script>
+  <div class="section">
+    <h2>③ 現在の日時を表示する</h2>
+    <button onclick="showDate()">日時を表示</button>
+    <p id="dateArea"></p>
+  </div>
 
+  <div class="section">
+    <h2>④ 背景色をランダムに変える</h2>
+    <button onclick="changeBackground()">背景色を変える</button>
+  </div>
+
+  <div class="section">
+    <h2>⑤ カウントアップ</h2>
+    <p id="counter">0</p>
+    <button onclick="increment()">＋1</button>
+  </div>
+
+  script.js</script>
 </body>
 </html>
-
-
-
