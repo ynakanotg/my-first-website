@@ -56,16 +56,16 @@ ul#userList li {
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 40px;
   }
 
   ul#userList li {
-    font-size: 17px;
+    font-size: 40px;
     padding: 14px;
   }
 
   .box {
-    font-size: 18px;
+    font-size: 40px;
     padding: 16px;
   }
 
@@ -78,3 +78,4 @@ ul#userList li {
     grid-template-columns: 1fr;
   }
 }
+
