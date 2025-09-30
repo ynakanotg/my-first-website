@@ -1,3 +1,24 @@
-function sayHello() {
-  alert("こんにちは、中野さん！");
+function changeText() {
+  document.getElementById("message").innerText = "JavaScriptで変更されました！";
 }
+
+function greet() {
+  const name = document.getElementById("nameInput").value;
+  document.getElementById("greeting").innerText = `こんにちは、${name}さん！`;
+}
+
+function showDate() {
+  const now = new Date();
+  document.getElementById("dateArea").innerText = now.toLocaleString();
+}
+
+function changeBackground() {
+  const colors = ["#FFCCCC", "#CCFFCC", "#CCCCFF", "#FFFFCC", "#E0FFFF", "#FFE4E1"];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.backgroundColor = randomColor;
+}
+
+let count = 0;
+function increment() {
+  count++;
+  document.getElementById("counter").innerText = count;
